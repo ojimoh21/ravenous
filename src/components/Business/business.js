@@ -34,8 +34,7 @@ class Business extends React.component {
           </div>
         </div>
       </div>
-)
-  }
+)};
 }
 
 export default Business;
