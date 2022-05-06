@@ -4,9 +4,10 @@ import './business.css';
 class Business extends React.Component {
   render () {
     return (
+      <a href={this.props.business.url} target="_blank" rel="noreferrer">
       <div className="Business">
         <div className="image-container">
-          <img src='https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg' alt=''/>
+          <img src={this.props.business.imageSrc} alt=''/>
         </div>
         <h2>{this.props.business.name}</h2>
         <div className="Business-information">
@@ -22,6 +23,7 @@ class Business extends React.Component {
           </div>
         </div>
       </div>
+      </a>
 )};
 }
 
